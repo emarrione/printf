@@ -1,4 +1,4 @@
-.TH man 3 "17 October 2022" "0.1" "_printf man page"
+.TH man 3 "19 June 2017" "0.10" "_printf man page"
 
 .SH NAME
 
@@ -22,11 +22,11 @@
 
 .B _printf()
 
-Prints to standard output under the control of a
+Prints to standard output under the control of a 
 
 .I format
 
-string that specifies how subsequent arguments are converted for output.
+string that specifies how subsequent arguments are converted for output. 
 
 .SH Return value
 
@@ -44,8 +44,8 @@ The argument must correspond properly with the conversion specifier. By default,
 
 .SH The conversion specifier
 
- A character that specifies the type of conversion to be applied. The conversion specifiers and their meanings are:
- 
+A character that specifies the type of conversion to be applied. The conversion specifiers and their meanings are:
+
 .TP
 
 .BR c
@@ -72,33 +72,21 @@ The int argument is converted to signed decimal notation.
 
 .TP
 
+.B x, X
+
+The unsigned int argument is converted to unsigned lowercase hexadecimal notation(x), or unsigned uppercase hexadecimal notation(X).
+
+.TP
+
 .B u
 
 The unsigned int argument is converted to unsigned decimal notation
 
 .TP
 
-.B o
+.B o, b
 
-The unsigned int argument is converted to unsigned octal notation.
-
-.TP
-
-.B x
-
-The unsigned int argument is converted to unsigned lowercase hexadecimal notation.
-
-.TP
-
-.B X
-
-The unsigned int argument is converted to unsigned uppercase hexadecimal notation.
-
-.TP
-
-.B b
-
-The unsigned int argument is converted to unsigned binary notation.
+The unsigned int argument is converted to unsigned octal notation(o) or binary notation(b).
 
 .TP
 
@@ -122,7 +110,7 @@ Prints a string converted to rot13
 
 .B %
 
-A '%' is written but no argument is converted. The complete version specification is '%%'
+A % is written but no argument is converted. The complete version specification is %%
 
 .SH EXAMPLE
 
@@ -142,8 +130,8 @@ _printf("%s, %s %d, %d\\n", weekday, month, day, year);
 
 .SH BUGS
 
-No known bugs generated
+No known bugs.
 
 .SH AUTHOR
 
-FELIX BAMSON AND CHINECHEREM LUTHER-ONYEMKPA
+Marrone Ngollessong Ntube, Joseph Opaleye
